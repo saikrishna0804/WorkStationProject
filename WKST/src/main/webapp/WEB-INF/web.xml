@@ -8,9 +8,35 @@
 		<servlet-name>FloorInsertServlet</servlet-name>
 		<servlet-class>com.vt.servlet.floor.FloorInsertServlet</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>FloorUpdateServlet</servlet-name>
+		<servlet-class>com.vt.servlet.floor.FloorUpdateServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>FloorDeleteServlet</servlet-name>
+		<servlet-class>com.vt.servlet.floor.FloorDeleteServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>FloorSelectServlet</servlet-name>
+		<display-name>FloorSelectServlet</display-name>
+		<description></description>
+		<servlet-class>com.vt.servlet.floor.FloorSelectServlet</servlet-class>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>FloorInsertServlet</servlet-name>
 		<url-pattern>/FloorInsertServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FloorUpdateServlet</servlet-name>
+		<url-pattern>/FloorUpdateServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FloorDeleteServlet</servlet-name>
+		<url-pattern>/FloorDeleteServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FloorSelectServlet</servlet-name>
+		<url-pattern>/FloorSelectServlet</url-pattern>
 	</servlet-mapping>
 	<welcome-file-list>
 		<welcome-file>index.jsp</welcome-file>

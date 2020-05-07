@@ -24,7 +24,7 @@ public class FloorInsertServlet extends HttpServlet {
 		String floorId = request.getParameter("floorId");
 		String floorName = request.getParameter("floorName");
 		String floorDesc = request.getParameter("floorDesc");
-		String sql = "INSERT INTO WKSTFLOOR (FLOORID,FLOORNAME,FLOORDESC) VALUES(?,?,?)";
+		String sql = "INSERT INTO WKSTFLOOR  VALUES(?,?,?)";
 		try {
 			con = ConnectionUtil.getConnection();
 			p = con.prepareStatement(sql);
